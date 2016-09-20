@@ -1,0 +1,236 @@
+@import url(https://fonts.googleapis.com/css?family=Hammersmith+One);
+html,
+body {
+  /*width: 100%;
+  height: 100%;*/
+}
+
+body {
+  /*font-size: 87.5%;
+  font-family: Arial, sans-serif;
+  background: #ffbf69;*/
+}
+
+h1 {
+  /*text-align: center;
+  font-family: 'Hammersmith One', sans-serif;
+  color: #7d521e;
+  font-size:32px;*/
+}
+
+p {
+  /*text-align: center;
+  color: #966429;*/
+}
+/* 	Overlay Banner */
+/*	---------------------------------------------------- */
+.overlay-ribbon > h1 {
+  color: white;
+}
+.overlay-ribbon {
+  /*position: absolute;*/
+  width: 13em;
+  height: 5em;
+  z-index: 9999;
+  top: 0;
+  left: 80%;
+  background: #4a4a4a;
+  /*background: #2ec4b6;*/
+  padding: 5px 0;
+  margin-top: 10px;
+  /* IE10 Consumer Preview */
+
+  /*background-image: -ms-radial-gradient(left center, circle farthest-side, #cbf3f0 0%, #09bfae 100%);*/
+  /* Mozilla Firefox */
+
+  /*background-image: -moz-radial-gradient(left center, circle farthest-side, #cbf3f0 0%, #09bfae 100%);*/
+  /* Opera */
+
+  /*background-image: -o-radial-gradient(left center, circle farthest-side, #cbf3f0 0%, #09bfae 100%);*/
+  /* Webkit (Safari/Chrome 10) */
+
+  /*background-image: -webkit-gradient(radial, left center, 0, left center, 487, color-stop(0, #cbf3f0), color-stop(1, #09bfae));*/
+  /* Webkit (Chrome 11+) */
+
+  /*background-image: -webkit-radial-gradient(left center, circle farthest-side, #cbf3f0 0%, #09bfae 100%);*/
+  /* W3C Markup, IE10 Release Preview */
+
+  /*background-image: radial-gradient(circle farthest-side at left center, #cbf3f0 0%, #09bfae 100%);*/
+  -webkit-box-shadow: -5px 15px 28px -4px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: -5px 15px 28px -4px rgba(0, 0, 0, 0.43);
+  box-shadow: -5px 15px 28px -4px rgba(0, 0, 0, 0.43);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+
+  animation: slidein 1s ease-in-out forwards;
+}
+
+.ribbon-content {
+  z-index: 99999;
+  position: relative;
+  margin: 0 5px;
+}
+
+
+
+.ribbon-content h3 {
+  margin: 0;
+  padding: 5px 0 5px 0;
+  line-height: 16px;
+  font-family: 'Hammersmith One', sans-serif;
+  color: #24505a;
+  text-align: center;
+}
+
+.ribbon-content > p,
+.ribbon-content > a,
+.ribbon-content > p span {
+  color: rgb(245,245,245);
+  font-size: 2.8rem;
+  margin: 0;
+  padding: 0;
+  padding-left: 5px;
+}
+
+.ribbon-content p span {
+  display: block;
+}
+
+.close-x {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 99;
+}
+
+.close-x a:link,
+.close-x a:visited {
+  background: #2ec4b6;
+  color: #fff;
+  padding: 0 4px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.close-x a:hover {
+  background: #ff9f1c;
+}
+
+.overlay-ribbon:before {
+  /*content: "";
+  position: absolute;
+  bottom: -9em;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 10em solid #2ec4b6;
+  border-right: 10em solid transparent;
+  z-index: 997;*/
+  content: "";
+    position: absolute;
+    bottom: 0em;
+    right: -3em;
+    width: 0;
+    height: 0;
+    border-top: 5em solid #4a4a4a;
+    border-right: 5em solid transparent;
+    z-index: 997;
+}
+
+.overlay-ribbon:after {
+  /*content: "";
+  position: absolute;
+  bottom: -9em;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 10em solid #2ec4b6;
+  border-left: 10em solid transparent;
+  z-index: 998;*/
+  content: "";
+    position: absolute;
+    bottom: 0em;
+    right: -3em;
+    width: 0;
+    height: 0;
+    border-bottom: 5em solid #4a4a4a;
+    border-right: 5em solid transparent;
+    z-index: 998;
+}
+
+.slideout {
+  animation: slideout 0.5s ease-in-out forwards;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    transform: translate(350%, 0);
+  }
+  to {
+    transform: translate(0, 0px);
+  }
+}
+
+@-o-keyframes slidein {
+  from {
+    transform: translate(600%, 0);
+  }
+  to {
+    transform: translate(350%, 0px);
+  }
+}
+
+@-moz-keyframes slidein {
+  from {
+    transform: translate(600%, 0);
+  }
+  to {
+    transform: translate(350%, 0px);
+  }
+}
+
+@keyframes slidein {
+  from {
+    transform: translate(600%, 0);
+  }
+  to {
+    transform: translate(350%, 0px);
+  }
+}
+
+@-webkit-keyframes slideout {
+  from {
+    transform: translate(0, 0px);
+  }
+  to {
+    transform: translate(-200px, 0;
+  }
+}
+
+@-o-keyframes slideout {
+  from {
+    transform: translate(0, 0px);
+  }
+  to {
+    transform: translate(-200px, 0);
+  }
+}
+
+@-moz-keyframes slideout {
+  from {
+    transform: translate(0, 0px);
+  }
+  to {
+    transform: translate(-200px, 0);
+  }
+}
+
+@keyframes slideout {
+  from {
+    transform: translate(0, 0px);
+  }
+  to {
+    transform: translate(-200px, 0);
+  }
+}

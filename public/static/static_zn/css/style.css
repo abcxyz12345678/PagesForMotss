@@ -1,0 +1,244 @@
+html.ios {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+html.ios, html.ios body {
+    height: initial !important;
+}
+
+.not-active {
+    pointer-events: none;
+    cursor: default;
+}
+
+.menu.sidebar.menu .item {
+    /*font-size: rem;*/
+}
+
+a {
+    color: #5f5e5e;
+}
+
+a:link {
+    color: black;
+}
+
+.top_div {
+    background-image: url("/static/static_zn/images/top_div.png");
+    #background-attachment: fixed;
+    #position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    #width: 100%;
+    padding: auto;
+    text-align: center;
+}
+
+.one_em_margin_card {
+    margin: 0em;
+    margin-top: 0em;
+}
+
+.no_padding {
+    padding: 0 !important;
+}
+
+.img_round {}
+
+.zero_margin {
+    margin: 0 !important;
+}
+
+
+/*.zero_pad {
+    padding-top: 0.0em !important;
+    padding-bottom: 0.0em !important;
+    padding-left: 0.0em !important;
+    padding-right: 0.0em !important;
+}*/
+
+.vertical {
+    padding-top: 1em !important;
+    margin-bottom: 3px !important;
+}
+
+.content_title {
+    font-size: 4.5em;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.content_subtitle {
+    font-size: 3em;
+    color: #bbbbbb;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.top_image {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    box-shadow: 0px 0px 20px rgba(1, 1, 1, 1);
+    min-height: 650px;
+    max-height: 650px;
+    background-image: url("http://img.zcool.cn/community/0332de355e5074f32f875a132d9b1c0.jpg");
+}
+
+.top_image_shadow {
+    width: 100%;
+    top: 0;
+    min-height: 650px;
+}
+
+.top_title {
+    font-size: 4em;
+    border: 11px solid rgb(255, 255, 255);
+    padding: 14px;
+    letter-spacing: 7px;
+    box-shadow: 10px 8px 0px #616161;
+    border-radius: 20px;
+    top: 250px;
+    color: #ffffff;
+    position: relative;
+}
+
+.contents {
+    /*padding-top: 652px;*/
+}
+
+.article {
+    background-color: #292F33;
+    /*padding: 2rem 4rem;*/
+}
+
+.article p, .article li {
+    color: #969696;
+    font-family: "HYQiHei-25JF";
+    line-height: 2rem;
+    font-size: 1.2rem;
+    word-wrap: break-word;
+    text-align: left;
+    margin: 1rem 0;
+}
+
+.article h1 {
+    color: #e2e2e2;
+    font-family: "HYQiHei-50S";
+    margin-top: 150px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.qa_group p:nth-child(2) {
+    /*margin-bottom: 1rem;*/
+}
+
+.qa_group h3 {
+    /*font-size: 3.5rem !important;*/
+}
+
+.ui.fixed.sticky+div {
+    margin-top: 60px;
+}
+
+.ui.sticky.sticky_label .overlay-ribbon {
+    transition: left 1.5s ease;
+    left: 0;
+}
+
+.ui.sticky.sticky_label.fixed.top .overlay-ribbon {
+    left: -350%;
+    position: relative;
+}
+
+.sticky_label {
+    /*min-height: 50px;
+    width: 200px !important;
+    height: 60px !important;
+    left: 56px;
+    background-color: #ffffff;
+    font-size: 3em;*/
+}
+
+#menu_btn {
+    position: fixed;
+    bottom: 7%;
+    right: 0%;
+    z-index: 999;
+    /*font-size: 2.5rem;*/
+    color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.3);
+    /*border-radius: 19px;*/
+    /*box-shadow: 9px 3px 22px 3px rgba(0, 0, 0, 0.5);*/
+}
+
+.square {
+    width: 6rem;
+    height: 6rem;
+}
+
+.relative {
+    position: relative;
+    width: 500px;
+    font-size: 4rem;
+    text-align: left;
+    line-height: 4rem;
+}
+
+.image_group {
+    margin-bottom: 300px;
+}
+
+.para_header {
+    margin-bottom: 100px !important;
+    letter-spacing: 0.3rem;
+    /*color: #ffffff;*/
+    /*font-size: 4rem;*/
+}
+
+.subsection {
+    padding-bottom: 150px !important;
+}
+
+.para_collection {
+    padding: 0rem 0rem;
+}
+
+.my_divider {
+    height: 2px;
+    width: 100%;
+    background-color: rgb(255, 0, 0);
+    ;
+}
+
+.fa-circle {
+    padding-right: 3rem;
+}
+
+.ui.mymassive.button {
+    font-size: 1.5rem !important;
+    margin-bottom: 60px;
+    border-radius: 0.1rem;
+    font-weight: 1000;
+}
+
+.secton_top_image {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    background-color: #292F33;
+    box-shadow: 0 0 1rem 0 rgba(110, 110, 110, 0.5);
+}
+
+.ui.grid {
+    background-color: #292F33;
+    margin: -1rem 0;
+}
+
+.card {
+    box-shadow: 0 1px 3px 0 #D4D4D5,0 0 0 1px #000000 !important;
+}
