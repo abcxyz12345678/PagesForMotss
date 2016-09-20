@@ -14,8 +14,9 @@ app.use(express.static(__dirname + '/public/'));
 
 swig.setDefaults({ varControls: ['<<', '>>'] });
 
-app.get('/:name', function (req, res) {
-	var fileName = req.params.name;
+app.get('/*', function (req, res) {
+	// console.log("req = ", req.params);
+	var fileName = req.params['0'];
 	console.log("fileName = "+fileName);
 	if (DEBUG == true) swig.invalidateCache();
 	if (fileName == "favicon.ico") {
@@ -24,7 +25,8 @@ app.get('/:name', function (req, res) {
 
 	} else {
 		// res.sendFile(__dirname + '/views/' + fileName + '/index.html')
-		res.render(fileName+'/index.html');
+		console.log("fileName2 = ", fileName);
+		res.render(fileName);
 	}
 });
 
