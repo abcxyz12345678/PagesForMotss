@@ -1,60 +1,132 @@
-body {
-    /*background-color: rgb(0,0,0);*/
-    .slider-content {
-        position: relative;
-        max-width: 112rem;
-        // min-width: 480px;
-        // min-height: 1000px;
-        background-color: rgb(0,0,0);
-        background: #fff;
-        margin: 0 auto;
-        overflow: hidden;
-        box-shadow: 0 0 35px 20px rgba(79,69,66,0.2);
+html {
+    height: 100%;
+    body {
+        height: 100%;
+        background: #E4E0E0;
 
-        .nav-wrapper {
+        .vertical-center {
+            min-height: 100%;
+            /* Fallback for browsers do NOT support vh unit */
+            min-height: 100vh;
+            /* These two lines are counted as one :-)       */
+            display: flex;
+            align-items: center;
+        }
+        /*background-color: rgb(0,0,0);*/
+        .slider-content {
             position: absolute;
-            height: 100%;
-            width: 12rem;
-            padding: 0 4rem;
-            top: 0;
-            right: 0;
-            text-align: center;
-            z-index: 10;
+            width: 80%;
+            max-width: 70rem;
+            // min-width: 480px;
+            min-height: 85%;
+            background-color: rgb(0,0,0);
+            background: #fff;
+            margin: 0 auto;
+            left: 50%;
+            transform: translateX( -50%);
+            overflow: hidden;
+            box-shadow: 0 0 35px 20px rgba(79,69,66,0.2);
 
-            .nav-arrows {
-                position: relative;
-                display: inline-block;
-                top: 50%;
-                transform: translateY( -50%);
-            }
+            .page {
+                overflow: hidden;
+                .sidebar {
+                    min-height: 100%;
+                    width: 15rem;
+                    background-color: rgba(0,100,200,0.5);
+                    position: absolute;
+                    left: -50%;
+                    left: 0%;
 
-            .nav-down,
-            .nav-up {
-                width: 2rem;
-                height: 3rem;
-                cursor: pointer;
-
-                svg {
-                    fill: #666666;
-                    width: 100%;
-                    max-height: 100%;
-
-                    &:hover {
-                        fill: black;
+                    .item {
+                        background-color: rgba(100,0,200,0.5);
+                        min-height: 3rem;
                     }
+                }
+                .subpage {
+                    .bussiness-card {
+                        background-color: #aa00bb;
+                        position: absolute;
+                        left: 27%;
+                        top: 15%;
+                        width: 55%;
+                        height: 65%;
+                    }
+                    position: absolute;
+                    min-height: 100%;
+                    width: 50%;
+
+                    .number {
+
+                    }
+                    .left-number {
+                        @extend .number;
+                        left: 0;
+                    }
+                    .right-unmber {
+                        @extend .number;
+                        right: 0;
+                    }
+                }
+
+                .right-half {
+                    left: 50%;
+                }
+
+                .page-img {
+                    // background-color: #aabb00;
+                    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/42764/slider1.jpg) no-repeat center center;
+                    background-size: cover;
                 }
             }
 
-            .nav-up {
-                transform: rotate(180deg);
+            .slider-container {
+                position: absolute;
             }
+            .nav-wrapper {
+                position: absolute;
+                height: 100%;
+                width: 9rem;
+                padding: 0 4rem;
+                top: 0;
+                right: 0;
+                text-align: center;
+                z-index: 10;
 
-            .nav-line {
-                width: 100%;
-                height: 0.1rem;
-                background: black;
-                margin: 1rem 0;
-                background: #666666;
+                .nav-arrows {
+                    position: relative;
+                    display: inline-block;
+                    top: 50%;
+                    transform: translateY( -50%);
+                }
+
+                .nav-down,
+                .nav-up {
+                    width: 1.2rem;
+                    height: 1rem;
+                    cursor: pointer;
+
+                    svg {
+                        fill: #666666;
+                        width: 100%;
+                        max-height: 100%;
+
+                        &:hover {
+                            fill: black;
+                        }
+                    }
+                }
+
+                .nav-up {
+                    transform: rotate(180deg);
+                }
+
+                .nav-line {
+                    width: 100%;
+                    height: 0.05rem;
+                    background: #ffffff;
+                    margin: 0.5rem 0;
+                    background: #666666;
+                }
             }
         }
     }
